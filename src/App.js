@@ -1,7 +1,15 @@
 import React from 'react';
 
+import Header from './components/Header';
+import Feed from './components/Feed';
+
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <>
+      <Header></Header>
+      <Feed></Feed>
+    </>
+  );
 }
 
 export default App;
