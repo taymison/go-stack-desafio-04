@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Comment from './Comment';
+
 import './index.css';
 
 function Post({ author, date, content, comments }) {
@@ -20,7 +22,11 @@ function Post({ author, date, content, comments }) {
       </div>
       <p className="post__content">{content}</p>
       <hr className="post__separator" />
-      <div className="post__comemnts"></div>
+      <div className="post__comemnts">
+        {comments.map(comment => (
+          <Comment key={comment.id} {...comment} />
+        ))}
+      </div>
     </section>
   );
 }

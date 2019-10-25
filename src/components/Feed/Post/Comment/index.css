@@ -1,0 +1,28 @@
+.comment {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.comment:last-of-type {
+  margin-bottom: unset;
+}
+
+.comment__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.comment__content {
+  border-radius: 20px;
+  background-color: #eee;
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #3e3e3e;
+  margin-left: 10px;
+}
+
+.comment__content__author {
+  font-weight: bold;
+}
